@@ -19,7 +19,7 @@ namespace CC4
             long numInhabitants = Convert.ToInt64(Console.ReadLine());
             Console.WriteLine("Tax revenue?");
             double taxRevenue = Convert.ToDouble(Console.ReadLine());
-            double taxRevenuePerInhabitant = taxRevenue * numInhabitants;
+            double taxRevenuePerInhabitant = taxRevenue / numInhabitants;
 
             if ((isCapital && numInhabitants > 100000) || (numInhabitants > 200000 && taxRevenuePerInhabitant > 1000000000))
             {
