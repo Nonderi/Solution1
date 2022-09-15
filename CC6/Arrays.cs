@@ -11,7 +11,10 @@ namespace CC6
         static void Main(string[] args)
         {
             int[] input = new int[] { 1, 4, 5, 7, 20000, -511, 100, -200, 400 };
-            Console.WriteLine(input.Sum());
+            int sum = 0;
+            foreach(int value in input)
+                sum+=value;
+            Console.WriteLine(sum);
         }
     }
 }

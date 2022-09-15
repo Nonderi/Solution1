@@ -24,8 +24,8 @@ namespace CC7
             {
                 for (int j = 0; j < size; j++)
                 {
-                    var newItem = array2D[i, j].ToString().PadLeft(4);
-                    Console.Write(newItem);
+                    var item = array2D[i, j].ToString().PadLeft(4);
+                    Console.Write(item);
                 }
                 Console.Write("\n");
             }
